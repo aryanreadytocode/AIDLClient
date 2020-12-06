@@ -9,4 +9,5 @@ interface IMyAidlInterface {
      * and return values in AIDL.
      */
     List<String> screenOrientation();
+
 }

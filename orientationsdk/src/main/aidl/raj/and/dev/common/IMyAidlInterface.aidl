@@ -1,5 +1,5 @@
 // IMyAidlInterface.aidl
-package raj.and.dev.orientationsdk.common;
+package raj.and.dev.common;
 
 // Declare any non-default types here with import statements
 
@@ -9,4 +9,5 @@ interface IMyAidlInterface {
      * and return values in AIDL.
      */
     List<String> screenOrientation();
+
 }

@@ -14,6 +14,7 @@ import android.os.IBinder;
 import android.os.RemoteException;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -23,7 +24,7 @@ import raj.and.dev.common.IMyAidlInterface;
 public class MainActivity extends AppCompatActivity {
 
     TextView tv1, tv2;
-    AppCompatButton btnBind;
+//    AppCompatButton btnBind;
     private IMyAidlInterface aidlInterface;
 
     ServiceConnection connection = new ServiceConnection() {
@@ -38,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
 
         }
     };
+
+
 
     private void getSensorData() {
         List<String> datalist;
@@ -58,10 +61,11 @@ public class MainActivity extends AppCompatActivity {
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         tv1 = binding.tv1;
         tv2 = binding.tv2;
-        btnBind = binding.btnBind;
+//        btnBind = binding.btnBind;
+        bindService();
     }
 
-    public void bindService(View view) {
+    public void bindService() {
         Intent intent = new Intent("raj.and.dev.service.AIDL");
         bindService(convertImplicitIntentToExplicit(intent), connection, BIND_AUTO_CREATE);
     }

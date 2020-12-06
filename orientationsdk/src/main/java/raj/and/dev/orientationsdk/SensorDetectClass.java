@@ -1,4 +1,4 @@
-package raj.and.dev.orientationsdk.screenorientation;
+package raj.and.dev.orientationsdk;
 
 import android.app.Activity;
 import android.content.Context;

@@ -1,4 +1,4 @@
-package raj.and.dev.orientationsdk.screenorientation;
+package raj.and.dev.orientationsdk;
 
 /**
  * Created by Raj Aryan on 12/6/2020.

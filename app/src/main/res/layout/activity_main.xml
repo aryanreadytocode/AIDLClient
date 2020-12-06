@@ -10,13 +10,6 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnBind"
-            android:onClick="bindService"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="bind" />
-
 
         <TextView
             android:id="@+id/tv1"

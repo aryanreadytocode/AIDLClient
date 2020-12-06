@@ -4,12 +4,11 @@
         android:allowBackup="true">
 
         <service
-            android:name=".common.MyService"
+            android:name="raj.and.dev.common.MyService"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
                 <action android:name="raj.and.dev.service.AIDL" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </service>
