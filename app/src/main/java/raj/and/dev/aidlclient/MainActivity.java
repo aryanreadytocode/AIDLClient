@@ -49,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
             if (datalist!=null && datalist.size()==2) {
                 tv1.setText(datalist.get(0));
                 tv2.setText(datalist.get(1));
+            }else {
+                Toast.makeText(this, "Configuration Error", Toast.LENGTH_SHORT).show();
             }
         } catch (RemoteException e) {
             e.printStackTrace();
